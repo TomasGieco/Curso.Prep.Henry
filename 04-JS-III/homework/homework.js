@@ -67,15 +67,6 @@ function arrayContiene(array, elemento) {
     // Devuelve "true" si está, o "false" si no está
     // Tu código:
 
-    // No entiendo por que este caso no funciona en el testeo
-
-    // array.forEach(element => {
-    //     if (element === elemento) {
-    //         return true;
-    //     }
-    // });
-    // return false;
-
     for (var i = 0; i < array.length; i++) {
         if (array[i] === elemento) return true;
     }
