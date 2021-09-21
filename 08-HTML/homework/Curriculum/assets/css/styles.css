@@ -1,0 +1,81 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+
+/* ================================ HEADER ================================ */
+
+.header__container {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+}
+
+.header__img {
+    margin-right: auto;
+}
+
+.header__color {
+    color: dodgerblue;
+}
+
+.header__titles {
+    color: dodgerblue;
+    font-size: 25px;
+}
+
+.header__list {
+    font-size: 18px;
+}
+
+
+/* ================================ Desarrollo ================================ */
+
+.tema__inicio {
+    font-size: 23px;
+    margin: auto;
+    padding: 10px;
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 5px;
+}
+
+.dot {
+    font-size: 20px;
+}
+
+.dot__color {
+    color: dodgerblue;
+    font-size: 20px;
+}
+
+.dot__none__color {
+    color: dodgerblue;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.dot__none {
+    margin-left: 20px;
+    font-size: 18px;
+    list-style-type: none;
+}
