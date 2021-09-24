@@ -26,7 +26,7 @@ function numberOfCharacters(string) {
     var obj = {};
     for (let i = 0; i < string.length; i++) {
         if (Object.keys(obj).includes(string[i])) {
-            obj[string[i]] = obj[string[i]] + 1;
+            obj[string[i]] += 1;
             continue;
         }
         obj[string[i]] = 1;
@@ -111,13 +111,13 @@ function sortArray(arr) {
     //Escribe tu código aquí
 
     for (let i = 0; i < arr.length; i++) {
-        var temp = arr[i]
-        var j = i - 1
-        while (j >= 0 && temp.length < arr[j].length) {
-            arr[j + 1] = arr[j]
-            j--
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i].length > arr[j].length) {
+                var aux = arr[i];
+                arr[i] = arr[j];
+                arr[j] = aux;
+            }
         }
-        arr[j + 1] = temp
     }
     return arr;
 }
